@@ -10,9 +10,9 @@ Vagrant::configure("2") do |config|
     devbox_config.vm.box = "boxcutter/ubuntu1404-desktop"
 
     # override the basebox when testing (an approximation) with docker
-    devbox_config.vm.provider :docker do |docker, override|
-      override.vm.box = "tknerr/baseimage-ubuntu-14.04"
-    end
+#    devbox_config.vm.provider :docker do |docker, override|
+#      override.vm.box = "tknerr/baseimage-ubuntu-14.04"
+#    end
 
     # set the hostname
     devbox_config.vm.hostname = "java-devbox.local"
